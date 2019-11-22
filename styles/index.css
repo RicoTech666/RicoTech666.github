@@ -113,14 +113,29 @@
 }
   
 
-.right-page h1 {
+.right-page h1, 
+.article-page h1{
 font-family: cursive;  
 }
-.right-page p {
+.right-page p, 
+.article-page p{
   font-size: 25px;
 }
-.right-page .font-time {
+.right-page .font-time,
+.article-page h2{
   color: darkgray;
   font-size:18px ;
   text-align:left;
+}
+
+.article-page{
+  padding: 0;
+  width: 60%;
+  /*float: right;*/
+  margin: 0 auto;
+  /*background-color: black;*/
+}
+
+.article-video video{
+  width: 100%;
 }
