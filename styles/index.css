@@ -25,6 +25,7 @@
   width: 100px;
   height: 100px;
 }
+
 .left-page .intro h1 {
   text-align: center;
   color: white;
@@ -47,13 +48,15 @@
   display: flex;
   justify-content: space-evenly;
 }
+
 .left-page ul {
   display: table;
   padding: 0;
   list-style-type: none;
 }
+
 .left-page .navigation .iconfont {
-  font-size: 30px;
+  font-size: 20px;
   color: #fff;
 }
 
@@ -65,8 +68,6 @@
   text-decoration: none;
   color: #fff;
 } 
-
-
 
  .right-page .right-title {
   width: auto;
@@ -99,12 +100,14 @@
   background-color: white;
   border-bottom: 1px solid rgb(235, 228, 228);
 }
+
 .right-page .sub-papar-list-show {
   margin-left: 150px;
   margin-top: 20px;
   width: auto;
   height: auto;      
 }
+
 .right-page .paper-list-show img{
   float: left;
   position: relative;
@@ -112,15 +115,18 @@
   height: 100px;
 }
   
-
 .right-page h1, 
 .article-page h1{
 font-family: cursive;  
 }
+
 .right-page p, 
 .article-page p{
   font-size: 25px;
+  font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+  color: rgb(109, 103, 103);
 }
+
 .right-page .font-time,
 .article-page h2{
   color: darkgray;
