@@ -57,10 +57,11 @@
 }
 
 .left-page .navigation .iconfont {
-  display: block;
+  
   font-size: 20px;
   color: #fff;
-  letter-spacing: 5px;}
+  letter-spacing: 5px;
+}
 
 .left-page li {
   margin-top: 20px;
