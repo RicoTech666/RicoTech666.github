@@ -31,7 +31,7 @@ body, html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
+  box-shadow: 0 0 2px rgba(0,0,0,1);
 }
 .my-info {
   position: absolute;
@@ -47,6 +47,7 @@ body, html {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  animation: bounceInDown 2s;
 }
 
 .info-image {
@@ -60,13 +61,12 @@ body, html {
     margin-top: 10%;
 }
 
-.iconfont {
-
- font-size: 30px;
- float: right;
- color: gray;
-
+.close-icon i {
+  font-size: 30px;
+  float: right;  
+  padding: 10px;  
 }
+
 .homepage-intro {
     order: 2;
     margin-top: 8%;
@@ -88,6 +88,10 @@ body, html {
     display: flex;
     justify-content: space-evenly;
 }
+.Job-and-Location i {
+    font-size: 20px;
+    color: gray;
+}
 .text-for-icon {
     order: 5;
     display: flex;
@@ -96,8 +100,8 @@ body, html {
     margin-top: 3%;
     color: gray;
 }
-a {
-    text-decoration: none;
+ a {
+  text-decoration: none;
   color:gray;
   letter-spacing: 0px;
 }
@@ -105,21 +109,22 @@ a {
 
 <body>
     <div class="bg-image"></div>
-    <div class="my-info" style="animation: bounceInDown 2s;">
-        
+    <div class="my-info">
+        <div class="close-icon">
+          <a href="../index.html"><i class="iconfont icon-close"></i></a>
+        </div> 
         <div class="info-image">
-            <a href="../index.html"><i class="iconfont icon-Close"></i></a>
-            <img src="../images/wangnima.jpg" alt="headshot"/></div>    
+          <img src="../images/wangnima.jpg" alt="headshot"/></div>    
         <div class="homepage-intro">
           <h1>Nima wang</h1>
-          <h4>I am nobody without my mask</h4>
+          <h4>I am nobody without my mask.</h4>
         </div>
         <div class="Job-and-Location">
           <i class="iconfont icon-suitcase"></i>
           <i class="iconfont icon-location"></i>
         </div>
         <div class="text-for-icon">
-            <h3 style="margin-left: 5px;">Video Producer</h3>
+            <h3 style="margin-left: 10%;">Actor</h3>
             <h3>Guangdong,Shenzhen</h3>
         </div>
     </div>

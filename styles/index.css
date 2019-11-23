@@ -2,26 +2,50 @@
   margin: 0;
   padding: 0;
 }
+ .body, html {
+   height: 100%;
+   margin: 0;
+ }
+.background {
+  position: fixed;
+  background-image: url(../images/city.jpg);
+  filter: blur(10px);
+  z-index: 1;
 
-.left-page {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.main-page {
+  position: absolute;
+  background-color:rgb(247, 224, 224 ,0);
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+
+
+.left-content {
   position: fixed;
   float: left;
   display: flex;
   flex-direction: column;
 
+  border: 3px solid white;
   width: 30%;
   height: 100%;
-
-  background: url(../images/cover.jpg);
 }
 
 .right-page {
   float: right;
   width: 70%;
+  z-index: 4;
+  background-color: #fff;
 }
 
-
-.left-page .headshot img {
+.left-content .headshot img {
   display: block;
 
   width: 100px;
@@ -33,7 +57,7 @@
   border-radius: 50%;
 }
 
-.left-page .intro h1 {
+.left-content .intro h1 {
   padding: 5px;
 
   text-align: center;
@@ -45,7 +69,7 @@
   color: white;
 }
 
-.left-page .intro p {
+.left-content .intro p {
   padding: 5px;
 
   text-align: center;
@@ -57,7 +81,7 @@
 
 }
 
-.left-page .navigation {
+.left-content .navigation {
   display: flex;
   justify-content: space-evenly;
 
@@ -65,26 +89,25 @@
   height: 100%;
 }
 
-.left-page ul {
+.left-content ul {
   display: table;
   padding: 0;
   list-style-type: none;
 }
 
-.left-page .navigation .iconfont {
-  
+.left-content .navigation .iconfont {
+  display: block;
   font-size: 20px;
   color: #fff;
   letter-spacing: 5px;
 }
 
-.left-page li {
+  .left-content li {
   margin-top: 20px;
   letter-spacing: 0px;
 }
 
-
-.left-page a {
+.left-content a {
   text-decoration: none;
   color: #fff;
   letter-spacing: 0px;
@@ -158,7 +181,7 @@
 
 
 
-.right-page .paper-list-show img{
+.right-page .paper-list-show img {
   position: relative;
   float: left;
 
@@ -228,3 +251,112 @@ font-family: cursive;
 .article-video video{
   width: 100%;
 }
+
+.archi-body{
+  background-color: rgb(15, 14, 23);
+}
+
+.timeline-title{
+  font-size: 20px;
+  color: rgb(41, 409, 243);
+  text-align: center;
+  padding: 3% 0 3% 0;
+}
+
+.archi-timeline-row,
+.archi-timeline-row-reverse{
+  display: flex;
+  justify-content: center;
+  height: 40%;
+}
+
+.archi-timeline-row-reverse{
+  flex-direction: row-reverse;
+}
+
+.archi-timeline-row .archi-article,
+.archi-timeline-row-reverse .archi-time,
+.archi-timeline-row-reverse .archi-grad-text {
+  text-align: right;
+}
+
+.archi-timeline-row-reverse .archi-grad-text{
+  float:right;
+}
+
+.archi-timeline-row .archi-time,
+.archi-timeline-row .archi-grad-text,
+.archi-timeline-row-reverse .archi-article {
+  text-align: left;
+}
+
+.archi-article,
+.archi-time{
+  width: 40%;
+  padding: 20px;
+}
+
+
+.archi-article h2{
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(41, 409, 243);
+  padding: 20px 0 20px 0;
+}
+
+.archi-article p{
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(202, 211, 217);
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.archi-time h1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  padding: 20px 0 20px 0;
+}
+
+.archi-grad-text{
+  width: 23%;
+  background-image: linear-gradient(135deg, rgb(41, 409, 243), rgb(15,99,210));
+  -webkit-background-clip: text;
+  /*This Comment can not be deleted*/
+  /*border-bottom: text;*/
+  color: transparent;
+}
+
+.archi-top-line,
+.archi-bot-line{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 1%;
+}
+
+.archi-top-line{
+  border-top: 3px solid rgb(235, 228, 228);
+}
+
+.archi-bot-line{
+  border-bottom: 3px solid rgb(235, 228, 228);
+}
+
+.line-above-icon,
+.line-below-icon{
+  background-color:rgb(235, 228, 228);
+  width:3px;
+}
+
+.line-above-icon {
+  height: 10%;
+}
+
+.line-below-icon {
+  height: 74%;
+}
+.archi-body .iconfont{
+  font-size: 15px;
+  color: rgb(41, 409, 243);
+}
+
