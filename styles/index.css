@@ -248,3 +248,111 @@ font-family: cursive;
 .article-video video{
   width: 100%;
 }
+
+.archi-body{
+  background-color: rgb(15, 14, 23);
+}
+
+.timeline-title{
+  font-size: 20px;
+  color: rgb(41, 409, 243);
+  text-align: center;
+  padding: 3% 0 3% 0;
+}
+
+.archi-timeline-row,
+.archi-timeline-row-reverse{
+  display: flex;
+  justify-content: center;
+  height: 40%;
+}
+
+.archi-timeline-row-reverse{
+  flex-direction: row-reverse;
+}
+
+.archi-timeline-row .archi-article,
+.archi-timeline-row-reverse .archi-time,
+.archi-timeline-row-reverse .archi-grad-text {
+  text-align: right;
+}
+
+.archi-timeline-row-reverse .archi-grad-text{
+  float:right;
+}
+
+.archi-timeline-row .archi-time,
+.archi-timeline-row .archi-grad-text,
+.archi-timeline-row-reverse .archi-article {
+  text-align: left;
+}
+
+.archi-article,
+.archi-time{
+  width: 40%;
+  padding: 20px;
+}
+
+
+.archi-article h2{
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(41, 409, 243);
+  padding: 20px 0 20px 0;
+}
+
+.archi-article p{
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(202, 211, 217);
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.archi-time h1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  padding: 20px 0 20px 0;
+}
+
+.archi-grad-text{
+  width: 23%;
+  background-image: linear-gradient(135deg, rgb(41, 409, 243), rgb(15,99,210));
+  -webkit-background-clip: text;
+  /*This Comment can not be deleted*/
+  /*border-bottom: text;*/
+  color: transparent;
+}
+
+.archi-top-line,
+.archi-bot-line{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 1%;
+}
+
+.archi-top-line{
+  border-top: 3px solid rgb(235, 228, 228);
+}
+
+.archi-bot-line{
+  border-bottom: 3px solid rgb(235, 228, 228);
+}
+
+.line-above-icon,
+.line-below-icon{
+  background-color:rgb(235, 228, 228);
+  width:3px;
+}
+
+.line-above-icon {
+  height: 10%;
+}
+
+.line-below-icon {
+  height: 74%;
+}
+.archi-body .iconfont{
+  font-size: 15px;
+  color: rgb(41, 409, 243);
+}
