@@ -46,7 +46,7 @@
     height: 50px;
     
     margin: 0 auto;
-    margin-top: 10%;
+    margin-top: 50%;
     margin-bottom: 5%;
     border-radius: 50%;
   }
@@ -87,7 +87,15 @@
     width: 100%;
     height: 100%;
   }
+  .left-content .navigation-1 {
+    width: 100%;
+    height: auto;
+  }
   
+  .left-content .navigation-2 {
+    width: 100%;
+    height:auto;
+  }
   
   
   .left-content ul {
@@ -133,8 +141,6 @@
     width: 30%;
     height: 100%;
   }
-  
-
   .left-content .headshot img{
     display: block;
   
@@ -150,22 +156,23 @@
   .left-content .intro h1 {
     padding: 5px;
   
+  
     text-align: center;
     margin-bottom: 20px;
     color: white;
-    font-size: 25px;
+    font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   
     color: white;
-    
   }
   
   .left-content .intro p {
     padding: 5px;
+   
   
     text-align: center;
   
-    font-size: 18px;
+    font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
   
     color: white;
@@ -174,17 +181,28 @@
   
   .left-content .navigation {
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-  
-    
+    justify-content: space-around;
+
     width: 100%;
     height: 100%;
   }
   
+  .left-content .navigation-1 {
+    width: 100%;
+    height: auto;
+    margin-left: 15%;
+    margin-top: 10%;
+  }
   
+  .left-content .navigation-2 {
+    width: 100%;
+    height:auto;
+    margin-left: 15%;
+    margin-top: 10%;
+  }
   
   .left-content ul {
+  
     display: table;
     padding: 0;
     list-style-type: none;
@@ -195,12 +213,12 @@
     display: block;
     font-size: 20px;
     color: #fff;
-    letter-spacing: 5px;
+    letter-spacing: 20px;
   }
   
-    .left-content li {
-    margin-top: 20px;
-    letter-spacing: 0px;
+.left-content li {
+  margin-top: 30px;
+  letter-spacing: 0px;
   
   }
   
@@ -211,8 +229,11 @@
   } 
   .icon-name {
     letter-spacing: 0;
+    font-size: 20px;
   }
 }
+
+
 
 
 .right-page {
@@ -277,7 +298,7 @@
 .right-page .sub-papar-list-show {
   width: auto;
   height: auto;     
-  margin-left: 150px;
+  margin-left: 250px;
   margin-top: 20px;
 }
 
@@ -289,14 +310,10 @@
   margin-bottom: 20px;
 }
 
-
-
 .right-page .paper-list-show img {
-  position: relative;
   float: left;
-
-  width: 100px;
-  height: 100px;
+  width: 185px;
+  height: 185px;
 }
   
 .right-page h1, 
@@ -364,14 +381,25 @@ font-family: cursive;
 
 .archi-body{
   background-color: rgb(15, 14, 23);
+  padding-bottom: 30px;
 }
 
 .timeline-title{
-  font-size: 20px;
-  color: rgb(41, 409, 243);
+  font-size: 30px;
+  color: rgb(41, 209, 243);
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   padding: 3% 0 3% 0;
 }
+.archi-timeline-top,
+.archi-timeline-bot{
+  width: 1%;
+  height: 3px;
+  margin:0 auto;
+  background-color:rgb(235, 228, 228);
+}
+
+
 
 .archi-timeline-row,
 .archi-timeline-row-reverse{
@@ -388,6 +416,10 @@ font-family: cursive;
 .archi-timeline-row-reverse .archi-time,
 .archi-timeline-row-reverse .archi-grad-text {
   text-align: right;
+}
+
+.archi-timeline-row .archi-grad-text{
+  float:left;
 }
 
 .archi-timeline-row-reverse .archi-grad-text{
@@ -409,8 +441,8 @@ font-family: cursive;
 
 .archi-article h2{
   font-family: Arial, Helvetica, sans-serif;
-  color: rgb(41, 409, 243);
-  padding: 20px 0 20px 0;
+  color: rgb(41, 209, 243);
+  margin: 20px 0 20px 0;
 }
 
 .archi-article p{
@@ -423,33 +455,23 @@ font-family: cursive;
 .archi-time h1{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
-  padding: 20px 0 20px 0;
+  margin: 20px 0 20px 0;
+
 }
 
 .archi-grad-text{
-  width: 23%;
-  background-image: linear-gradient(135deg, rgb(41, 409, 243), rgb(15,99,210));
+  background-image: linear-gradient(135deg, rgb(41, 209, 243), rgb(15,99,210));
   -webkit-background-clip: text;
-  /*This Comment can not be deleted*/
-  /*border-bottom: text;*/
+  background-clip: text;
   color: transparent;
 }
 
-.archi-top-line,
-.archi-bot-line{
+.archi-v-line{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   width: 1%;
-}
-
-.archi-top-line{
-  border-top: 3px solid rgb(235, 228, 228);
-}
-
-.archi-bot-line{
-  border-bottom: 3px solid rgb(235, 228, 228);
 }
 
 .line-above-icon,
@@ -459,14 +481,27 @@ font-family: cursive;
 }
 
 .line-above-icon {
-  height: 10%;
+  height: 40px;
 }
 
 .line-below-icon {
-  height: 74%;
-}
-.archi-body .iconfont{
-  font-size: 15px;
-  color: rgb(41, 409, 243);
+  flex-grow: 1; /* default 0 */
 }
 
+
+.archi-body .iconfont{
+  font-size: 15px;
+  color: rgb(41, 209, 243);
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+@media only screen and (max-width: 400px) {
+  .right-page .paper-list-show img,
+  .right-page .sub-papar-list-show{
+      width: 100%;
+      display: block;
+      height: 200px;
+      line-height: 200px;
+  }
+}
