@@ -91,6 +91,16 @@
   height: 100%;
 }
 
+.left-content .navigation-1 {
+  width: 150px;
+  height: auto;
+}
+
+.left-content .navigation-2 {
+  width: 150px;
+  height:auto;
+}
+
 .left-content ul {
   display: table;
   padding: 0;
@@ -169,8 +179,9 @@
 .right-page .sub-papar-list-show {
   width: auto;
   height: auto;     
-  margin-left: 150px;
+  margin-left: 250px;
   margin-top: 20px;
+  float:left;
 }
 
 .right-page .sub-papar-list-show h2 {
@@ -181,14 +192,10 @@
   margin-bottom: 20px;
 }
 
-
-
 .right-page .paper-list-show img {
-  position: relative;
   float: left;
-
-  width: 100px;
-  height: 100px;
+  width: 185px;
+  height: 185px;
 }
   
 .right-page h1, 
@@ -360,5 +367,15 @@ font-family: cursive;
 .archi-body .iconfont{
   font-size: 15px;
   color: rgb(41, 409, 243);
+}
+
+@media only screen and (max-width: 400px) {
+  .right-page .paper-list-show img,
+  .right-page .sub-papar-list-show{
+      width: 100%;
+      display: block;
+      height: 200px;
+      line-height: 200px;
+  }
 }
 

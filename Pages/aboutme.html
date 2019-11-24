@@ -42,11 +42,8 @@ body, html {
   height: 60%;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0,0,0,0.9);
-  
   border-radius: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+
   animation: bounceInDown 2s;
 }
 
@@ -69,7 +66,7 @@ body, html {
 
 .homepage-intro {
     order: 2;
-    margin-top: 8%;
+    margin-top: 3%;
 }
 .homepage-intro h1{
     text-align: center;
@@ -77,29 +74,40 @@ body, html {
     
 }
 .homepage-intro h4{
-    margin-top: 5%;
+    margin-top: 2%;
     text-align: center;
     color: gray;
     font-size: 20px ;
 }
-.Job-and-Location {
-    order: 4;
-    margin-top: 10%;
-    display: flex;
-    justify-content: space-evenly;
-}
-.Job-and-Location i {
-    font-size: 20px;
-    color: gray;
-}
-.text-for-icon {
-    order: 5;
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
+.div-for-left {
+    position: relative;
     margin-top: 3%;
-    color: gray;
+    margin-left: 20px;
+    margin-right: 10px;
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    width: 40%;
+    height: 100px;
+    color: rgb(94, 91, 87);
 }
+.div-for-right{
+    position: relative;
+    margin-top: 3%;
+    margin-left: 10px;
+    margin-right: 20px;
+    float: right;
+    font-size: 20px;
+    text-align: center;
+    width: 40%;
+    height: 100px;
+    color: rgb(94, 91, 87);
+}
+.my-info i {
+  font-size: 30px;
+  color: rgb(94, 91, 87);
+}
+
  a {
   text-decoration: none;
   color:gray;
@@ -117,14 +125,17 @@ body, html {
           <img src="../images/wangnima.jpg" alt="headshot"/></div>    
         <div class="homepage-intro">
           <h1>Nima wang</h1>
-          <h4>I am nobody without my mask.</h4>
+          <h4>I am nobody without my mask.I am nobody without my mask.I am nobody without my mask.
+              I am nobody without my mask.I am nobody without my mask.
+          </h4>
         </div>
-        <div class="Job-and-Location">
-          <i class="iconfont icon-suitcase"></i>
-          <i class="iconfont icon-location"></i>
+
+        <div class="div-for-left">
+            <i class="iconfont icon-suitcase"></i>
+            <h3>Actor</h3>
         </div>
-        <div class="text-for-icon">
-            <h3 style="margin-left: 10%;">Actor</h3>
+        <div class="div-for-right">
+            <i class="iconfont icon-location"></i>
             <h3>Guangdong,Shenzhen</h3>
         </div>
     </div>
