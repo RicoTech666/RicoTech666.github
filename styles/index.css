@@ -129,6 +129,29 @@
   }
   
 
+  .paper-list-show .sub-papar-list-show {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .right-page .paper-list-show {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgb(235, 228, 228);
+  
+    background-color: white;
+  }
+  .right-page .paper-list-show img {
+    float: left;
+    width: 350px;
+    height: 250px;
+    
+  }
 }
 @media only screen and (min-width: 800px) {
   .left-content {
@@ -231,6 +254,30 @@
     letter-spacing: 0;
     font-size: 20px;
   }
+  
+  .right-page .sub-papar-list-show {
+    width: auto;
+    height: auto;     
+    margin-left: 250px;
+    margin-top: 20px;
+  }
+  .right-page .paper-list-show {
+    width: auto;
+    height: auto;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgb(235, 228, 228);
+  
+    background-color: white;
+  }
+  .right-page .paper-list-show img {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+  }
+  
 }
 
 
@@ -239,7 +286,6 @@
 .right-page {
   float: right;
   width: 70%;
-  z-index: 4;
   background-color: #fff;
 }
 
@@ -284,23 +330,7 @@
   display: block;
 }
   
-.right-page .paper-list-show {
-  width: auto;
-  height: auto;
-  margin-right: 50px;
-  margin-left: 50px;
-  margin-bottom: 15px;
-  border-bottom: 1px solid rgb(235, 228, 228);
 
-  background-color: white;
-}
-
-.right-page .sub-papar-list-show {
-  width: auto;
-  height: auto;     
-  margin-left: 250px;
-  margin-top: 20px;
-}
 
 .right-page .sub-papar-list-show h2 {
   margin-bottom: 10px;
@@ -310,11 +340,7 @@
   margin-bottom: 20px;
 }
 
-.right-page .paper-list-show img {
-  float: left;
-  width: 185px;
-  height: 185px;
-}
+
   
 .right-page h1, 
 .article-page h1{
@@ -496,12 +522,4 @@ font-family: cursive;
   margin-bottom: 7px;
 }
 
-@media only screen and (max-width: 400px) {
-  .right-page .paper-list-show img,
-  .right-page .sub-papar-list-show{
-      width: 100%;
-      display: block;
-      height: 200px;
-      line-height: 200px;
-  }
-}
+
